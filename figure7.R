@@ -15,6 +15,11 @@ MIR <- tibble(KEY = c("M.U2.B.A2I.AM.R.A.2240.EUR.N", "M.U2.B.A2C.AM.R.A.2250.EU
 figure7 <- MIR |>
   rename(TIME_PERIOD = obsTime, OBS_VALUE = obsValue) |>
   mutate(date = as.Date(paste0(TIME_PERIOD, "-01"))) |>
+  mutate(TITLE = factor(KEY,
+                        levels = c("M.U2.B.A2I.AM.R.A.2240.EUR.N",
+                                        "M.U2.B.A2C.AM.R.A.2250.EUR.N"),
+                        labels = c("Cost of borrowing for corporations",
+                                   "Cost of borrowing for households for house purchase"))) |>
   select(date, OBS_VALUE, TITLE)
 
 ggplot(data = figure7) + 
@@ -38,6 +43,11 @@ ggsave("figure7.pdf", width = 1.25*6, height = 1.25*3.375)
 figure7_fr <-  MIR |>
   rename(TIME_PERIOD = obsTime, OBS_VALUE = obsValue) |>
   mutate(date = as.Date(paste0(TIME_PERIOD, "-01"))) |>
+  mutate(TITLE = factor(KEY,
+                        levels = c("M.U2.B.A2I.AM.R.A.2240.EUR.N",
+                                   "M.U2.B.A2C.AM.R.A.2250.EUR.N"),
+                        labels = c("Coût de l'emprunt pour les entreprises",
+                                   "Coût de l'emprunt pour les ménages pour l'achat de leur logement"))) |>
   select(date, OBS_VALUE, TITLE)
 
 ggplot(data = figure7_fr) + 
