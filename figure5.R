@@ -5,15 +5,14 @@ library("ggrepel")
 
 ## Load ECB datasets ------
 
-datasets_ECB <- c("FM")
-
-for (dataset in datasets_ECB){
-  download.file(paste0("https://sdw-wsrest.ecb.europa.eu/service/data/", dataset, "?format=csvdata"),
-                destfile = paste0(dataset, ".csv"),
-                quiet = F)
-  assign(dataset, fread(paste0(dataset, ".csv")))
-  unlink(paste0(dataset, ".csv"))
-}
+FM <- tibble(KEY = c("D.U2.EUR.4F.KR.DFR.LEV",
+                     "D.U2.EUR.4F.KR.MLFR.LEV",
+                     "D.U2.EUR.4F.KR.MRR_RT.LEV")) |>
+  mutate(data = map(KEY, ~ paste0("https://sdw-wsrest.ecb.europa.eu/service/data/FM/", .) |>
+                      rsdmx::readSDMX() |>
+                      as_tibble())) |>
+  unnest(cols = c(data)) %>%
+  rename(TIME_PERIOD = obsTime, OBS_VALUE = obsValue)
 
 ## English ------
 
