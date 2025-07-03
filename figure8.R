@@ -25,7 +25,7 @@ figure8 <- YC_PUB |>
 
 
 ggplot(data = figure8)  + geom_line(aes(x = date, y = OBS_VALUE/100, color = Data_type_fm)) +
-  theme_minimal() + xlab("") + ylab("Interest rates (%)") +
+  theme_minimal() + xlab("") + ylab("Interest Rates (%)") +
   scale_x_date(breaks = as.Date(paste0(seq(1960, 2100, 2), "-01-01")),
                labels = date_format("%Y")) +
   scale_y_continuous(breaks = 0.01*seq(-10, 50, 0.5),
