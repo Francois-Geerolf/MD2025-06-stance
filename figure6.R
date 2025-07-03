@@ -14,12 +14,12 @@ money <- map_dfr(c("WALCL", "ECBASSETSW"), fredr)
 
 ## English ------
 
-figure6 <- money %>%
-  mutate(value = value/1000) %>%
+figure6 <- money |>
+  mutate(value = value/1000) |>
   mutate(Variable = factor(series_id,
                            levels = c("WALCL", "ECBASSETSW"),
-                           labels = c("Federal Reserve", "European Central Bank"))) %>%
-  select(date, value, Variable) %>%
+                           labels = c("Federal Reserve", "European Central Bank"))) |>
+  select(date, value, Variable) |>
   filter(date >= as.Date("2003-01-01"))
 
 
@@ -42,12 +42,12 @@ ggsave("figure6.pdf", width = 1.25*6, height = 1.25*3.375)
 
 ## Français ------
 
-figure6_fr <- money %>%
-  mutate(value = value/1000) %>%
+figure6_fr <- money |>
+  mutate(value = value/1000) |>
   mutate(Variable = factor(series_id,
                            levels = c("WALCL", "ECBASSETSW"),
-                           labels = c("Réserve Fédérale", "Banque Centrale Européenne"))) %>%
-  select(date, value, Variable) %>%
+                           labels = c("Réserve Fédérale", "Banque Centrale Européenne"))) |>
+  select(date, value, Variable) |>
   filter(date >= as.Date("2003-01-01"))
 
 
