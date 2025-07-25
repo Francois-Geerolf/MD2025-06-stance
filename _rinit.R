@@ -1,17 +1,6 @@
 # Define the package list
 packages <- c(
-  "ggplot2", "dplyr", "readr", "tibble", "stringr", "forcats", "purrr", "tidyr", # not tidyverse
-  "rsdmx",
-  "tools",
-  "knitr",
-  "scales",
-  "viridis",
-  "zoo",
-  "lubridate",
-  "ggrepel",
-  "curl",
-  "readxl",
-  "rmarkdown"
+  "fredr", "ggplot2", "dplyr", "readr", "tibble", "stringr", "forcats", "purrr", "tidyr", "readxl", "rsdmx", "tools", "knitr", "scales", "viridis", "zoo", "lubridate", "ggrepel", "curl", "rmarkdown"
 )
 
 # # Install any missing packages
