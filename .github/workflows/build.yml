@@ -1,0 +1,54 @@
+name: Build and Commit Outputs
+
+on:
+  push:
+    paths:
+      - '**.R'
+      - '**.Rmd'
+      - '_build.R'
+  pull_request:
+    paths:
+      - '**.R'
+      - '**.Rmd'
+      - '_build.R'
+  schedule:
+    - cron: '0 3 * * *'   # tous les jours à 03:00 UTC
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🔧 Setup R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: 🛠 Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
+
+      - name: 📦 Install Pandoc
+        uses: r-lib/actions/setup-pandoc@v2
+
+      - name: 📦 Install required packages
+        run: |
+          install.packages(c("ggplot2", "dplyr", "readr", "tibble", "stringr", "forcats", "purrr", "tidyr", "readxl", "rsdmx", "tools", "knitr", "scales", "viridis", "zoo", "lubridate", "ggrepel", "curl", "rmarkdown"))
+        shell: Rscript {0}
+
+      - name: ▶️ Run _build.R
+        run: Rscript _build.R
+
+      - name: 📤 Commit any updated output (README, png, pdf, etc.)
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md || true
+          [ -d png ] && git add *.png || true
+          [ -d pdf ] && git add *.pdf || true
+          git commit -m "Update outputs (README, PNG, PDF) [auto]" || echo "No changes to commit"
+          git push || echo "No changes to push"
