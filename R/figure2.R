@@ -14,6 +14,8 @@ for (dataset in datasets_eurostat){
 
 ## English -------
 
+Sys.setlocale("LC_TIME", "en_US.UTF-8")
+
 figure2_line <- prc_hicp_manr %>%
   filter(coicop %in% c("CP00"),
          geo == "EA") %>%
@@ -37,8 +39,6 @@ figure2 <- prc_hicp_ctrb %>%
   select(-geo, -unit) %>%
   filter(date >= as.Date("2019-01-01")) %>%
   select(date, coicop, values)
-
-Sys.setlocale("LC_TIME", "fr_CA.UTF-8")
 
 figure2 %>%
   mutate(Coicop_factor = factor(coicop, levels = c("SERV", "IGD_NNRG", "FOOD", "NRG"),
@@ -71,6 +71,8 @@ ggsave("png/figure2.png", width = 7, height = 4)
 
 ## French -------
 
+Sys.setlocale("LC_TIME", "fr_CA.UTF-8")
+
 figure2_fr_line <- prc_hicp_manr %>%
   filter(coicop %in% c("CP00"),
          geo == "EA") %>%
@@ -95,8 +97,6 @@ figure2_fr <- prc_hicp_ctrb %>%
   filter(date >= as.Date("2019-01-01")) %>%
   select(date, coicop, values)
 
-Sys.setlocale("LC_TIME", "fr_CA.UTF-8")
-
 figure2_fr %>%
   mutate(Coicop_factor = factor(coicop, levels = c("SERV", "IGD_NNRG", "FOOD", "NRG"),
                                 labels = c("Services",
@@ -117,8 +117,6 @@ figure2_fr %>%
         legend.title = element_blank(),
         axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1),
         legend.key.size = unit(0.4, "cm"))
-
-
 
 write.csv(figure2_fr, "csv/figure2_fr.csv")
 write.csv(figure2_fr_line, "csv/figure2_fr_line.csv")
