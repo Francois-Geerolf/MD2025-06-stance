@@ -1,7 +1,5 @@
-library("tidyverse")
-library("scales")
-library("data.table")
-library("fredr")
+
+source("_rinit.R")
 
 ## Load Fred datasets ------
 

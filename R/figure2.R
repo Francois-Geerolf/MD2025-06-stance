@@ -1,7 +1,5 @@
-library(tidyverse)
-library(eurostat)
-library(scales)
-library(viridis)
+
+source("_rinit.R")
 
 ## Load Eurostat datasets ------
 

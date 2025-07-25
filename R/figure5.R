@@ -1,7 +1,5 @@
-library("tidyverse")
-library("scales")
-library("data.table")
-library("ggrepel")
+
+source("_rinit.R")
 
 ## Load ECB datasets ------
 
