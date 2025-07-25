@@ -62,7 +62,7 @@ Headline inflation,2004-06-01,3-year inflation,0.008291821816759566
 Headline inflation,2004-07-01,1-year inflation,0.007524045372288738
 Headline inflation,2004-07-01,3-year inflation,0.007997058288226697
 Headline inflation,2004-08-01,1-year inflation,0.006619919355577779
-Headline inflation,2004-08-01,3-year inflation,0.007656906218858811
+Headline inflation,2004-08-01,3-year inflation,0.007656906218858805
 Headline inflation,2004-09-01,1-year inflation,0.006547159366642147
 Headline inflation,2004-09-01,3-year inflation,0.007736385030637851
 Headline inflation,2004-10-01,1-year inflation,0.006637078650583366
@@ -94,7 +94,7 @@ Headline inflation,2005-10-01,3-year inflation,0.006190490998106854
 Headline inflation,2005-11-01,1-year inflation,0.006102193165670358
 Headline inflation,2005-11-01,3-year inflation,0.00620902641609651
 Headline inflation,2005-12-01,1-year inflation,0.006873041355283182
-Headline inflation,2005-12-01,3-year inflation,0.006072776424973892
+Headline inflation,2005-12-01,3-year inflation,0.006072776424973932
 Headline inflation,2006-01-01,1-year inflation,0.007748060952991024
 Headline inflation,2006-01-01,3-year inflation,0.0063043525378025855
 Headline inflation,2006-02-01,1-year inflation,0.007673575663180577
@@ -112,7 +112,7 @@ Headline inflation,2006-07-01,3-year inflation,0.006488668119886117
 Headline inflation,2006-08-01,1-year inflation,0.0071928562456715205
 Headline inflation,2006-08-01,3-year inflation,0.006038188479801995
 Headline inflation,2006-09-01,1-year inflation,0.008147797600608792
-Headline inflation,2006-09-01,3-year inflation,0.006080108864861341
+Headline inflation,2006-09-01,3-year inflation,0.00608010886486134
 Headline inflation,2006-10-01,1-year inflation,0.006339489140061934
 Headline inflation,2006-10-01,3-year inflation,0.005923565907503509
 Headline inflation,2006-11-01,1-year inflation,0.005244260808006835
@@ -180,7 +180,7 @@ Headline inflation,2009-05-01,3-year inflation,0.006687685287434316
 Headline inflation,2009-06-01,1-year inflation,0.00818156541886184
 Headline inflation,2009-06-01,3-year inflation,0.00647022036312938
 Headline inflation,2009-07-01,1-year inflation,0.006724256773060982
-Headline inflation,2009-07-01,3-year inflation,0.006444214084069712
+Headline inflation,2009-07-01,3-year inflation,0.0064442140840697245
 Headline inflation,2009-08-01,1-year inflation,0.0055735257444747745
 Headline inflation,2009-08-01,3-year inflation,0.006273407508067264
 Headline inflation,2009-09-01,1-year inflation,0.0064550621017563144
@@ -548,7 +548,7 @@ Headline inflation,2024-09-01,3-year inflation,0.008238341122128363
 Headline inflation,2024-10-01,1-year inflation,0.008895867845765206
 Headline inflation,2024-10-01,3-year inflation,0.008353046790706118
 Headline inflation,2024-11-01,1-year inflation,0.008300537174949631
-Headline inflation,2024-11-01,3-year inflation,0.007793462501518479
+Headline inflation,2024-11-01,3-year inflation,0.007793462501518478
 Headline inflation,2024-12-01,1-year inflation,0.008602403621854323
 Headline inflation,2024-12-01,3-year inflation,0.007999751778824685
 Headline inflation,2025-01-01,1-year inflation,0.00733845202471324
@@ -974,7 +974,7 @@ Core inflation,2018-12-01,3-year inflation,0.0036010188192764627
 Core inflation,2019-01-01,1-year inflation,0.005115322169523845
 Core inflation,2019-01-01,3-year inflation,0.0034756272777285856
 Core inflation,2019-02-01,1-year inflation,0.00501030973319807
-Core inflation,2019-02-01,3-year inflation,0.003947801808279846
+Core inflation,2019-02-01,3-year inflation,0.003947801808279807
 Core inflation,2019-03-01,1-year inflation,0.004553388670756354
 Core inflation,2019-03-01,3-year inflation,0.003405832294113276
 Core inflation,2019-04-01,1-year inflation,0.006263654290767988
@@ -1026,7 +1026,7 @@ Core inflation,2021-02-01,3-year inflation,0.004858924411139539
 Core inflation,2021-03-01,1-year inflation,0.008728113605299341
 Core inflation,2021-03-01,3-year inflation,0.005000334462174546
 Core inflation,2021-04-01,1-year inflation,0.007532345307336224
-Core inflation,2021-04-01,3-year inflation,0.005288753436871545
+Core inflation,2021-04-01,3-year inflation,0.005288753436871599
 Core inflation,2021-05-01,1-year inflation,0.009395821857415457
 Core inflation,2021-05-01,3-year inflation,0.005272587060152835
 Core inflation,2021-06-01,1-year inflation,0.007754138207881277
@@ -1080,7 +1080,7 @@ Core inflation,2023-05-01,3-year inflation,0.008881654910984527
 Core inflation,2023-06-01,1-year inflation,0.01311702958480199
 Core inflation,2023-06-01,3-year inflation,0.008237740615631503
 Core inflation,2023-07-01,1-year inflation,0.012315806630846545
-Core inflation,2023-07-01,3-year inflation,0.008898381974318931
+Core inflation,2023-07-01,3-year inflation,0.00889838197431893
 Core inflation,2023-08-01,1-year inflation,0.013487698957340186
 Core inflation,2023-08-01,3-year inflation,0.008296166208551288
 Core inflation,2023-09-01,1-year inflation,0.009329850257251172
