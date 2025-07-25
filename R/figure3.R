@@ -28,8 +28,8 @@ figure3 <- prc_hicp_manr |>
   select(-time) |>
   filter(date >= as.Date("2000-01-01")) |>
   group_by(coicop, date) |>
-  summarise(`Unweighted` = sqrt(Hmisc::wtd.var(values/100, uniform_weights)),
-            `Weighted` = sqrt(Hmisc::wtd.var(values/100, country_weights))) |>
+  summarise(`Unweighted` = sqrt(wtd.var(values/100, uniform_weights)),
+            `Weighted` = sqrt(wtd.var(values/100, country_weights))) |>
   gather(weighted_yes_no, values, -date, -coicop) |>
   arrange(desc(date))
 
@@ -68,8 +68,8 @@ figure3_fr <- prc_hicp_manr |>
   select(-time) |>
   filter(date >= as.Date("2000-01-01")) |>
   group_by(coicop, date) |>
-  summarise(`Écart-type non-pondéré` = sqrt(Hmisc::wtd.var(values/100, uniform_weights)),
-            `Écart-type pondéré` = sqrt(Hmisc::wtd.var(values/100, country_weights))) |>
+  summarise(`Écart-type non-pondéré` = sqrt(wtd.var(values/100, uniform_weights)),
+            `Écart-type pondéré` = sqrt(wtd.var(values/100, country_weights))) |>
   gather(weighted_yes_no, values, -date, -coicop) |>
   arrange(desc(date))
 
