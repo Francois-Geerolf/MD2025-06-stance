@@ -2,7 +2,7 @@
 packages <- c(
   "ggplot2", "dplyr", "readr", "tibble", "stringr", "forcats", "purrr", "tidyr",
   "readxl", "rsdmx", "tools", "knitr", "scales", "viridis",
-  "zoo", "lubridate", "ggrepel", "curl", "rmarkdown", "fredr", "eurostat"
+  "zoo", "lubridate", "ggrepel", "curl", "rmarkdown", "fredr", "eurostat", "Hmisc"
 )
 
 # # Install any missing packages

@@ -71,7 +71,7 @@ ggsave("png/figure2.png", width = 7, height = 4)
 
 ## French -------
 
-Sys.setlocale("LC_TIME", "fr_CA.UTF-8")
+Sys.setlocale("LC_TIME", "fr_FR.UTF-8")
 
 figure2_fr_line <- prc_hicp_manr %>%
   filter(coicop %in% c("CP00"),
