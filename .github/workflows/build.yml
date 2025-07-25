@@ -19,6 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      FRED_KEY: ${{ secrets.FRED_KEY }}
 
     steps:
       - name: 📥 Checkout repository
