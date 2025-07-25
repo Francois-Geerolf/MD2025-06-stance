@@ -89,6 +89,6 @@ ggplot(data = figure3_fr) + geom_line(aes(x = date, y = values, color = coicop, 
 
 
 write_csv(figure3_fr, "csv/figure3_fr.csv")
-ggsave(file.path("png", paste0("figure3_fr", ".png"), width = 1.25*6, height = 1.25*3.375, bg = "white")
-ggsave(file.path("pdf", paste0("figure3_fr", ".pdf"), width = 1.25*6, height = 1.25*3.375)
+ggsave(file.path("png", paste0("figure3_fr", ".png")), width = 1.25*6, height = 1.25*3.375, bg = "white")
+ggsave(file.path("pdf", paste0("figure3_fr", ".pdf")), width = 1.25*6, height = 1.25*3.375)
 
