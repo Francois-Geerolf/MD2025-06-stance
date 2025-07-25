@@ -1,4 +1,3 @@
-
 source("_rinit.R")
 
 ## Load Eurostat datasets ------
