@@ -1,4 +1,8 @@
 coicop,date,weighted_yes_no,values
+Inflation sous-jacente,2025-08-01,Écart-type non-pondéré,0.011735403570806458
+Inflation globale,2025-08-01,Écart-type non-pondéré,0.01400150367864673
+Inflation sous-jacente,2025-08-01,Écart-type pondéré,0.006965789844519063
+Inflation globale,2025-08-01,Écart-type pondéré,0.00869722867836984
 Inflation sous-jacente,2025-07-01,Écart-type non-pondéré,0.014255100656847082
 Inflation globale,2025-07-01,Écart-type non-pondéré,0.013156047238717578
 Inflation sous-jacente,2025-07-01,Écart-type pondéré,0.006516685340059563
