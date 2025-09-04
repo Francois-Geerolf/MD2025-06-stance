@@ -268,7 +268,8 @@ date,OBS_VALUE,TITLE
 2025-03-01,3.94,Cost of borrowing for corporations
 2025-04-01,3.8,Cost of borrowing for corporations
 2025-05-01,3.66,Cost of borrowing for corporations
-2025-06-01,3.61,Cost of borrowing for corporations
+2025-06-01,3.6,Cost of borrowing for corporations
+2025-07-01,3.52,Cost of borrowing for corporations
 2003-01-01,4.81,Cost of borrowing for households for house purchase
 2003-02-01,4.67,Cost of borrowing for households for house purchase
 2003-03-01,4.54,Cost of borrowing for households for house purchase
@@ -539,3 +540,4 @@ date,OBS_VALUE,TITLE
 2025-04-01,3.27,Cost of borrowing for households for house purchase
 2025-05-01,3.3,Cost of borrowing for households for house purchase
 2025-06-01,3.3,Cost of borrowing for households for house purchase
+2025-07-01,3.28,Cost of borrowing for households for house purchase
