@@ -78,7 +78,7 @@
 "77",2025-05-01,"Inflation (HICP)",1.9
 "78",2025-06-01,"Inflation (HICP)",2
 "79",2025-07-01,"Inflation (HICP)",2
-"80",2025-08-01,"Inflation (HICP)",2.1
+"80",2025-08-01,"Inflation (HICP)",2
 "81",2019-01-01,"Inflation without energy and food",0.78
 "82",2019-02-01,"Inflation without energy and food",0.7
 "83",2019-03-01,"Inflation without energy and food",0.55
@@ -158,3 +158,4 @@
 "157",2025-05-01,"Inflation without energy and food",1.63
 "158",2025-06-01,"Inflation without energy and food",1.64
 "159",2025-07-01,"Inflation without energy and food",1.64
+"160",2025-08-01,"Inflation without energy and food",1.62
